@@ -36,7 +36,10 @@
         <TextBox HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" Grid.Row="3" Grid.Column="3" TouchDown="TextBox_TouchDown" />
         <TextBox HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" Grid.Row="3" TouchDown="TextBox_TouchDown" />
         <TextBox HorizontalAlignment="Center" Text="?" VerticalAlignment="Center" FontSize="36" Grid.Row="3" Grid.Column="2" TouchDown="TextBox_TouchDown" />
-        <TextBox x:Name="timeTextBlock" Grid.ColumnSpan="4" HorizontalAlignment="Center" Grid.Row="4" Text="Elapsed time" VerticalAlignment="Center" FontSize="36" TouchDown="timeTextBlock_TouchDown"/>
+        <TextBox x:Name="timeTextBlock" Grid.ColumnSpan="4" HorizontalAlignment="Center" Grid.Row="4" Text="Elapsed time" VerticalAlignment="Center" FontSize="36" TouchDown="timeTextBlock_TouchDown" TextWrapping="Wrap"/>
+        <Button x:Name="highScores" Grid.ColumnSpan="2" Content="High Scores" HorizontalAlignment="Left" Margin="38,17,0,0" VerticalAlignment="Top" Width="75" TouchDown="highScores_TouchDown"/>
+        <Button x:Name="highScoreReset" Content="Reset" Grid.Column="1" HorizontalAlignment="Left" Margin="60,17,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" TouchDown="highScoreReset_TouchDown"/>
+        <TextBlock x:Name="highScoreList" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="4" Height="231" Grid.RowSpan="3" Width="372" Visibility="Hidden"/>
 
     </Grid>
 </Window>
